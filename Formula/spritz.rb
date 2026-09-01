@@ -6,26 +6,26 @@
 class Spritz < Formula
   desc "Nano DLNA media server — run in any folder to share it on the LAN"
   homepage "https://github.com/dfallman/spritz"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.4/spritz-aarch64-apple-darwin.tar.xz"
-      sha256 "d8be32b9f01bddb9ae314aca71c0c7dfd91221c697bd8cff701ed518cf3c0e88"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.5/spritz-aarch64-apple-darwin.tar.xz"
+      sha256 "b280e96de98ff6ea5c4865ef67534cfd525d13281ae199a744ea01cbb22409c0"
     else
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.4/spritz-x86_64-apple-darwin.tar.xz"
-      sha256 "d558812e179dd5e896de3939b564e8c4df7af93baef4584102b219c086154fe4"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.5/spritz-x86_64-apple-darwin.tar.xz"
+      sha256 "f1927b93b0d4bc6c22dac786be10e610f7213c9d3c19e05252c3006b9265e72b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.4/spritz-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2247a590092a2aa1dab0d18c9e0ed1f25a607219bdcdc05cefc4eedc82907f07"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.5/spritz-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8558d72c6fd0a022b8cc8accfeb636cc6bb9fff5faa95e23ef995d0d268a0793"
     else
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.4/spritz-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fa366bf577d4ad414fbaf338e7a03ca549c0b30d64f1212842ca2719a42629f6"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.5/spritz-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a168aba89374fffad955237151bd0f561666f1d503ecce56ef082d6896e60afd"
     end
   end
 
@@ -34,8 +34,6 @@ class Spritz < Formula
   end
 
   test do
-    # v0.1.4 predates the --version flag; later formulae are regenerated
-    # by CI with a version check.
-    assert_match "DLNA", shell_output("#{bin}/spritz --help")
+    assert_match version.to_s, shell_output("#{bin}/spritz --version")
   end
 end
