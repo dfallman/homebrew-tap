@@ -6,26 +6,26 @@
 class Texttv < Formula
   desc "Render SVT Text-TV (Swedish teletext) pages in the terminal"
   homepage "https://github.com/dfallman/texttv"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/texttv/releases/download/v0.1.9/texttv-v0.1.9-aarch64-apple-darwin.tar.gz"
-      sha256 "4e08745de16c7ce4a430dcd8503d779a4bb94283bd93e91130d9a07cf8b11895"
+      url "https://github.com/dfallman/texttv/releases/download/v0.1.10/texttv-v0.1.10-aarch64-apple-darwin.tar.gz"
+      sha256 "6cf282413f7504ee601a52235f86da603add77c0747b948e512f961a047e1d7b"
     else
-      url "https://github.com/dfallman/texttv/releases/download/v0.1.9/texttv-v0.1.9-x86_64-apple-darwin.tar.gz"
-      sha256 "e1b432e46dd88fb3c28d1f79681d8fb8a116a56adaa4f17120470b91affc216c"
+      url "https://github.com/dfallman/texttv/releases/download/v0.1.10/texttv-v0.1.10-x86_64-apple-darwin.tar.gz"
+      sha256 "d5053d5b854aa4cb830d7127a7d1ef111fea8fb1bac8403b8737cef1d15be791"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/texttv/releases/download/v0.1.9/texttv-v0.1.9-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b84b830fca373233e239fb9ab3f15f04da463dbf58835ae346851533f90c24d4"
+      url "https://github.com/dfallman/texttv/releases/download/v0.1.10/texttv-v0.1.10-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "78e3ccbe4ceb4030f476932b0545a9d422277ecb9bae164ac555aba4129127f4"
     else
-      url "https://github.com/dfallman/texttv/releases/download/v0.1.9/texttv-v0.1.9-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b210c4be64bfa53347dcca09059fc975c1dfb9c4bdb8a06c7b029a25b606fe44"
+      url "https://github.com/dfallman/texttv/releases/download/v0.1.10/texttv-v0.1.10-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "dd14690f1a90e45a7925c798fc5a4a2ed9be7171cb49d84101c8d4e17add4aa6"
     end
   end
 
