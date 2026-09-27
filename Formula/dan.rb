@@ -6,26 +6,26 @@
 class Dan < Formula
   desc "Fast, friendly, zero-fuss terminal text editor"
   homepage "https://github.com/dfallman/dan"
-  version "0.3.13"
+  version "0.4.0"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/dan/releases/download/0.3.13/dan-0.3.13-aarch64-apple-darwin.tar.gz"
-      sha256 "17b7956d96eca7bae42d5b09ff8ab8ea480b7f87781fe207fd45d8a88ff2b43b"
+      url "https://github.com/dfallman/dan/releases/download/0.4.0/dan-0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "d7705b88939ec32d8f95526c33da3e1b8dbce78bd470baa642739461340d71fc"
     else
-      url "https://github.com/dfallman/dan/releases/download/0.3.13/dan-0.3.13-x86_64-apple-darwin.tar.gz"
-      sha256 "93a85b94e07cb1bd77227d0cc32c583b4a891a8e56aeb2fcd81cec5cefa28f6f"
+      url "https://github.com/dfallman/dan/releases/download/0.4.0/dan-0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "8e0bf0eaaa76192c740a9f1d6b3c9248ea5351961eb1ff0f6e45941558ce17e3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/dan/releases/download/0.3.13/dan-0.3.13-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b2470fb23e145ea7ed4496378214e17e4dc17eeb2ea2f785e494e935bee45a90"
+      url "https://github.com/dfallman/dan/releases/download/0.4.0/dan-0.4.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4351f3253b3109e4f31f0be2aed96faaa0a16a2c9f985c06d3b293a2b6b6e248"
     else
-      url "https://github.com/dfallman/dan/releases/download/0.3.13/dan-0.3.13-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e705693c370d32df0aae416b6edee7da87d45a8cba8722332719bda280134549"
+      url "https://github.com/dfallman/dan/releases/download/0.4.0/dan-0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "76e2ffda4b7207df46718acb0c83666d6b411776bd647907c7c976a37975826d"
     end
   end
 
