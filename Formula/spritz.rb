@@ -6,26 +6,26 @@
 class Spritz < Formula
   desc "Nano DLNA media server — run in any folder to share it on the LAN"
   homepage "https://github.com/dfallman/spritz"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.8/spritz-aarch64-apple-darwin.tar.xz"
-      sha256 "fedc69ce048f68fbc811397bfdf4784241b158d5efc2646e71f036a2ab38a6da"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.9/spritz-aarch64-apple-darwin.tar.xz"
+      sha256 "9e1c01f353138ddc3e5ec0aaf505421a8fdd7e2383f4fa41596f625a359b1b34"
     else
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.8/spritz-x86_64-apple-darwin.tar.xz"
-      sha256 "42a3a1bd18efddd83cf25c80cef18aa08dc1071bfc692420eeeb94be06a7decf"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.9/spritz-x86_64-apple-darwin.tar.xz"
+      sha256 "473cce90fc6ff516f999c869230fbd8f92481d35d4289fb0004874a5172f89cb"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.8/spritz-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "99764b3bf91cab96d88f303c9e939fb7dd018903a30282b56216d501e40f76d3"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.9/spritz-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "2c6c1af8ea2cde81683b270812302ccd055efb4948ba6e3bbd90df107b928cfd"
     else
-      url "https://github.com/dfallman/spritz/releases/download/v0.1.8/spritz-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5c95a436f6dae5def334389b8aac6e11362a7934f1727788f5afb73e6478de7a"
+      url "https://github.com/dfallman/spritz/releases/download/v0.1.9/spritz-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1dff9da8241a3c5dea09808573399559671cabb10d673a356d3024dccdaa1136"
     end
   end
 
