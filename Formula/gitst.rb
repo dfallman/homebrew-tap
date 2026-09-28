@@ -6,26 +6,26 @@
 class Gitst < Formula
   desc "Live, glanceable git status TUI for small terminal panes"
   homepage "https://github.com/dfallman/gitst"
-  version "0.1.1"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/gitst/releases/download/0.1.1/gitst-0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "4666fbce08f1c2f76609dc98473f528734ec729b1a8f920748279fcc8dcb42a6"
+      url "https://github.com/dfallman/gitst/releases/download/0.1.5/gitst-0.1.5-aarch64-apple-darwin.tar.gz"
+      sha256 "d02b85b7bb258ccedb52647ad8a06b3eeb842d2fb5655f6c847fec2567afaf4e"
     else
-      url "https://github.com/dfallman/gitst/releases/download/0.1.1/gitst-0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "3ae65b28eab2180ab7b52cdfe53d0d5bb28fc1f636310bf58ab015989812c3ff"
+      url "https://github.com/dfallman/gitst/releases/download/0.1.5/gitst-0.1.5-x86_64-apple-darwin.tar.gz"
+      sha256 "06621aa6c39e5519d5b0f2cd63b864c2eec858af9f014d97644df5baae12f699"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/dfallman/gitst/releases/download/0.1.1/gitst-0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "20739eaa28d3242c5b5db5c4daed634ae303ad5d3901b53f389977990ceba704"
+      url "https://github.com/dfallman/gitst/releases/download/0.1.5/gitst-0.1.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bdc88dffab4214f340130d17699d734cb91ba71b0549d929f55dfec141308b01"
     else
-      url "https://github.com/dfallman/gitst/releases/download/0.1.1/gitst-0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5f9ceaa90811414f899f927e1a4e7b506dc8cc48566a3364c145f4aff4360e1d"
+      url "https://github.com/dfallman/gitst/releases/download/0.1.5/gitst-0.1.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5b6f75b69005cecf1aa3a83a78be0fc2252b1a1155c7cf1b50ff7e267fc56bb8"
     end
   end
 
