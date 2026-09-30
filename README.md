@@ -19,6 +19,7 @@ brew install dfallman/tap/texttv
 
 | Formula | Description |
 |---|---|
+| [`bupr`](https://github.com/dfallman/bupr) | Preset-based mirror backups for macOS |
 | [`dan`](https://github.com/dfallman/dan) | Fast, friendly, zero-fuss terminal text editor |
 | [`spritz`](https://github.com/dfallman/spritz) | Nano DLNA media server — run in any folder to share it on the LAN |
 | [`texttv`](https://github.com/dfallman/texttv) | Render SVT Text-TV (Swedish teletext) pages in the terminal |
